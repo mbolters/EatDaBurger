@@ -1,22 +1,22 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-    $(".change-eaten").on("click", function(event) {
+    $(".change-eat").on("click", function(event) {
       var id = $(this).data("id");
-      var newEat = $(this).data("newEat");
-  
+      var newEat = $(this).data("neweat");
+      console.log("this isnt working")
       var newEatState = {
         eaten: newEat
       };
   
       // Send the PUT request.
-      $.ajax("/api/burger/" + id, {
+      $.ajax("/api/burgers/" + id, {
         type: "PUT",
         data: newEatState
       }).then(
         function() {
-          console.log("changed sleep to", newEat);
+          console.log("changed eaten to", newEat);
           // Reload the page to get the updated list
-          loburgerion.reload();
+          location.reload();
         }
       );
     });
@@ -38,7 +38,7 @@ $(function() {
         function() {
           console.log("created new burger");
           // Reload the page to get the updated list
-          loburgerion.reload();
+          location.reload();
         }
       );
     });

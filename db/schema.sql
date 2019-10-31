@@ -1,9 +1,12 @@
-CREATE DATABASE burgers_db;
-USE burgers_db;
+
+### Schema
+
+CREATE DATABASE burger_db;
+USE burger_db;
 
 CREATE TABLE burgers(
-	id  INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
-	burger_name VARCHAR(100) NOT NULL,
-    eaten BOOLEAN NOT NULL
+	id  INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(200) NOT NULL,
+    eaten BOOLEAN DEFAULT false
 ); 
 
