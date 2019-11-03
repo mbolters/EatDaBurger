@@ -1,5 +1,5 @@
 var mysql = require('mysql');
-const myConfig = require('../config');
+const myConfig = require('../pw/config');
 
 
 var connection;
