@@ -1,6 +1,4 @@
 var mysql = require('mysql');
-const myConfig = require('');
-
 
 var connection;
 
@@ -13,7 +11,7 @@ if (process.env.JAWSDB_URL) {
 		port: 3306,
 		host: 'localhost',
 		user: 'root',
-		password: '',
+		password: ' ',
 		database: 'burger_db'
 	});
 };
