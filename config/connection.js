@@ -15,7 +15,7 @@ if (process.env.JAWSDB_URL) {
 		user: 'root',
 		password: myConfig.config.password,
 		database: 'burger_db'
-	})
+	});
 };
 
 
