@@ -9,4 +9,4 @@ CREATE TABLE burgers
     eaten BOOLEAN DEFAULT false
 ); 
 
-SET PASSWORD FOR root@localhost=PASSWORD('');
+SET PASSWORD FOR 'root'@'localhost' = ' ';
