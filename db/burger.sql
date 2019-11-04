@@ -10,3 +10,5 @@ CREATE TABLE burgers
 	PRIMARY KEY (id)
 
 ); 
+
+SET PASSWORD FOR root@localhost=PASSWORD('');
